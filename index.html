@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <h1>Welcome to News Portal</h1>
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="SHAYONIIIII.jpg" alt="Your Profile Image" width="75%" height="5%" class="profile-image">
+        <div class="profile-info">
+          <h3 class="profile-name">SHAYONI CHATTERJEE</h3>
+          <p class="profile-bio">I am a btech student from 3rd year</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form for publishing news articles -->
+    <h2>Publish Your News</h2>
+    <form id="newsForm">
+      <input type="text" id="newsTitle" placeholder="Enter title" required>
+      <textarea id="newsContent" placeholder="Enter content" required></textarea>
+      <input type="url" id="newsImage" placeholder="Enter image URL" required>
+      <button type="submit">Publish</button>
+    </form>
+
+    <!-- Container to display existing news articles -->
+    <h2>Trending News</h2>
+    <div id="existingNews"></div>
+
+    <!-- Container to display news articles -->
+    <h2>Your Published News</h2>
+    <div id="newsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
